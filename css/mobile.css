@@ -1,11 +1,11 @@
 @media (max-width: 576px) {
-
   .topnav a {
     display: block;
     text-align: start;
     border: none;
     padding: 1rem 2em;
     height: auto;
+    font-size: 1.5rem;
   }
 
   .topnav {
@@ -18,7 +18,7 @@
   }
 
   .content h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .content p {
@@ -27,24 +27,48 @@
 
   .personal-info .content p {
     margin-bottom: 0.3rem;
+    font-size: 1.4rem;
   }
 
   .objective .content p {
     margin-bottom: 2rem;
+    font-size: 1.4rem;
   }
 
   .masonry-container {
     column-count: 1;
   }
 
-  .certificate-content {
-    grid-template-columns: 1fr;
-    /* gap: 2.0rem; */
+  .work-info-item h4 {
+    font-size: walnuts2.0rem;
   }
 
-  .certificate-item:nth-child(even) {
-    border-left: none;
-    /* padding-left: 0; */
+  .work-info-item-content p {
+    font-size: 1.3rem;
+  }
+
+  .work-info-item-content h4 {
+    font-size: 1.8rem; 
+  }
+
+  .date-range-text p {
+    font-size: 1.3rem; 
+  }
+
+  .background-blue-text {
+    font-size: 1.3rem;
+  }
+
+  .content-icon p {
+    font-size: 1.3rem;
+  }
+
+  .language-info-item p {
+    font-size: 1.4rem;
+  }
+
+  .certificate-content {
+    grid-template-columns: 1fr;
   }
 
   .certificate-item {
@@ -53,14 +77,42 @@
     border-bottom: 1px solid #8a3535;
   }
 
+  .certificate-item:nth-child(even) {
+    border-left: none;
+  }
+
+  .certificate-item h4 {
+    font-size: 1.7rem; 
+  }
+
+  .certificate-item p {
+    font-size: 1.3rem;
+  }
+
   .cert-item-img {
     width: 100%;
     aspect-ratio: 2/1;
     margin-bottom: 1rem;
   }
 
-  .item-footer p {
-    display: none;
+  .project-title {
+    font-size: 2.4rem;
   }
 
+  .project-item-content h4 {
+    font-size: 1.7rem; 
+  }
+
+  .project-item-info p {
+    font-size: 1.3rem;
+  }
+
+  .project-item-content td {
+    font-size: 1.3rem;
+  }
+
+  .item-footer p {
+    display: none;
+    font-size: 1.3rem;
+  }
 }

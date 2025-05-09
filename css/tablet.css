@@ -1,15 +1,12 @@
 @media (max-width: 991px) {
   .content {
-
-    @media (max-width: 991px) {
-      width: 80%;
-      margin-top: 30px;
-    }
+    width: 80%;
+    margin-top: 30px;
   }
 
   .content h3 {
-
     margin-bottom: 20px;
+    font-size: 2.4rem;
   }
 
   .masonry-container {
@@ -19,8 +16,11 @@
 
   .certificate {
     margin-top: 5.0rem;
-    /* padding-top: 30rem; */
     padding: 3.0rem 3.0rem;
+  }
+
+  .certificate-title {
+    font-size: 2.6rem;
   }
 
   .certificate-item {
@@ -30,19 +30,41 @@
     grid-template-rows: 10rem 1fr;
   }
 
-  .project {
-
-    padding: 0;
+  .certificate-item h4 {
+    font-size: 1.8rem;
   }
-  .project-content {
-    grid-template-columns: 1fr;
+
+  .certificate-item p {
+    font-size: 1.4rem;
+  }
+
+  .project {
+    padding: 0;
   }
 
   .project-title {
     margin-bottom: 1.0rem;
+    font-size: 2.6rem;
+  }
+
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+
+  .project-item-content h4 {
+    font-size: 1.8rem;
+  }
+
+  .project-item-info p {
+    font-size: 1.3rem;
+  }
+
+  .project-item-content td {
+    font-size: 1.4rem; 
   }
 
   .topnav a {
     padding: 2rem;
+    font-size: 1.6rem;
   }
 }

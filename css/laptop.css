@@ -1,10 +1,6 @@
-/* style.css */
-
-/* ... (các phần CSS khác giữ nguyên) ... */
 * {
   padding: 0;
   margin: 0;
-  
 }
 
 html {
@@ -12,15 +8,14 @@ html {
 }
 
 body {
-  /* font-family: 'Inter'; */
   color: #3f4045;
   font-family: sans-serif;
+  font-size: 1.6rem;
 }
 
 .img-banner {
   background-color: black;
   position: relative;
-
   object-fit:cover;
 }
 
@@ -41,56 +36,46 @@ body {
 }
 
 .img-banner-text {
-  
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Sử dụng Grid cho top navigation */
+.img-banner-text h1 {
+  font-size: 4.8rem;
+}
+
+.img-banner-text p {
+  font-size: 2.4rem;
+}
 .topnav {
   background-color: #fff;
   width: 100%;
-  display: grid; /* Chuyển sang Grid */
-  grid-auto-flow: column; /* Các item tự động xếp thành cột */
-  justify-content: center; /* Căn giữa các cột grid trong container */
-  align-items: center; /* Căn giữa các item trong ô grid theo chiều dọc */
-  /* Bạn cũng có thể dùng gap nếu chỉ muốn khoảng cách thay vì đường kẻ: */
-  /* column-gap: .1rem; */
-  border-top: 1px solid #adb8bd; /* Thay đổi màu sắc/độ dày nếu cần */
-  border-bottom: 1px solid #adb8bd; /* Thay đổi màu sắc/độ dày nếu cần */
+  display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #adb8bd;
+    border-bottom: 1px solid #adb8bd;
 }
 
-/* Style các liên kết bên trong */
 .topnav a {
   color: #30292f;
-  text-align: center; /* Căn giữa text bên trong thẻ a */
-  padding: 0rem 4.0rem; /* Giữ padding ngang */
+  text-align: center;
+    padding: 0rem 4.0rem;
   text-decoration: none;
-  font-size: 1.7rem;
-  /* border: 1rem solid #adb8bd; /* Xóa border cũ */
-  /* gap: 10rem; /* Thuộc tính gap không dùng trực tiếp trên thẻ a kiểu này */
-
-  /* Giữ inline-flex để căn chỉnh icon và text BÊN TRONG thẻ a */
+  font-size: 1.8rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 6.0rem; /* Giữ chiều cao */
-
-  /* Thêm đường viền bên trái cho TẤT CẢ item */
-  border-left: 1px solid #adb8bd; /* Thay đổi màu sắc/độ dày nếu cần */
+  height: 6.0rem;
+    border-left: 1px solid #adb8bd;
 }
 
-/* Loại bỏ đường viền bên trái của item ĐẦU TIÊN */
 .topnav a:first-child {
   border-left: none;
 }
-
-/* Xóa comment không cần thiết */
-/* .topnav a:last-child { */
-/* border-right: none; */
-/* } */
 
 .ic-nav-item {
   width: 2.0rem;
@@ -99,27 +84,13 @@ body {
   margin-right: 0.8rem;
 }
 
-/* Giữ nguyên các style hover/active nếu bạn muốn dùng */
-.topnav a:hover {
-  /* background-color: #ddd; */
-  /* color: black; */
-}
-
-.topnav a.active {
-  /* background-color: #04AA6D; */
-  /* color: white; */
-}
-
-/* Giữ nguyên title-banner */
 .title-banner {
   text-align: center;
-  /* padding: 0rem 80rem; */
   border-left: 1px solid #adb8bd;
-  height: 6rem; /* Giữ chiều cao */
+  height: 6rem;
   width: 17rem;
   align-content: center;
   position: relative;
-  
 }
 
 .title-banner img {
@@ -134,24 +105,21 @@ body {
 
 .title-banner p {
   color: #adb8bd;
-  display: inline; /* Để p không chiếm toàn bộ chiều rộng */
+  display: inline;
+    font-size: 1.4rem;
 }
-
-/* .introduce {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
 
 .objective {
   background-color: #f2f4f4;
   align-items: right;
 }
+
 .personal-info {
   background-color: #e9ebed;
 }
 
 .form-contact-container {
-    background-color: #e9ebed;
+  background-color: #e9ebed;
 }
 
 .form-contact-container .container {
@@ -167,12 +135,14 @@ body {
   margin-bottom: 3rem;
 }
 
- .content h3 {
+.content h3 {
   margin-bottom: 4rem;
+  font-size: 2.8rem;
 }
 
 .personal-info .content p {
   margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .icons-social {
@@ -184,27 +154,16 @@ body {
   color: #53bdf2;
   margin-right: 0.5rem;
   font-size: 1.8rem;
-
   display: inline-block;
-}
-
-.work-info {
-  /* margin: 2rem 10rem; */
-  /* display: grid;
-  gap: 1rem; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .work-info-item {
   border: 1px solid #5d737e;
-  /* display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 6.5rem 1fr; */
-  /* padding: 1rem 2rem; */
 }
 
 .work-info-item h4 {
   align-self: center;
+  font-size: 2.2rem;
 }
 
 .work-info-icon {
@@ -218,6 +177,13 @@ body {
   margin-bottom: 2rem;
 }
 
+.work-info-item-content h4 {
+  font-size: 2.0rem;
+}
+
+.work-info-item-content p {
+  font-size: 1.5rem;
+}
 .date-range-text {
   padding: 1.5rem 0;
 }
@@ -240,6 +206,7 @@ body {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+
 .background-blue-text-rounded {
   background-color: #53bdf2;
   color: white;
@@ -249,6 +216,7 @@ body {
   font-size: 1.4rem;
   line-height: 2.0rem;
 }
+
 .interest-info .work-info-item-content {
   margin-top: 1.0rem;
   display: flex;
@@ -256,7 +224,6 @@ body {
 
 .content-icon {
   margin: 0 1.0rem;
-
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -276,10 +243,16 @@ body {
   margin-bottom: 1.4rem;
 }
 
+.content-icon p {
+  font-size: 1.4rem;
+}
 .language-info-item {
   margin-bottom: 2.0rem;
 }
 
+.language-info-item patico {
+  font-size: 1.5rem;
+}
 .progress-language-info-item {
   background-color: #53bdf2;
   display: inline-block;
@@ -298,20 +271,18 @@ body {
 
 .certificate {
   margin-top: 5.0rem;
-  /* padding-top: 30rem; */
   padding: 3.0rem 10.0rem;
   background-color: #f5f6f7;
 }
 
 .certificate-title {
-  font-size: 2.4rem;
+  font-size: 3.0rem;
 }
 
 .certificate-content {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* gap: 2.0rem; */
 }
 
 .certificate-item {
@@ -326,6 +297,13 @@ body {
   position: relative;
 }
 
+.certificate-item h4 {
+  font-size: 2.0rem;
+}
+
+.certificate-item p {
+  font-size: 1.5rem;
+}
 
 @media (min-width: 576px) {
 .certificate-item:nth-child(even) {
@@ -333,7 +311,6 @@ body {
   padding-left: 2.0rem;
 }
 }
-
 
 .certificate-item:last-child {
   border-right: none;
@@ -345,14 +322,13 @@ body {
 }
 
 .project {
-
   padding: 0 6rem;
 }
 
 .project-title {
   margin-top: 5.0rem;
   margin-bottom: 3.0rem;
-  font-size: 2.4rem;
+  font-size: 3.0rem;
 }
 
 .project-content {
@@ -380,23 +356,29 @@ body {
   border-bottom: 1px solid #adb8bd;
   padding: 1.5rem 0.8rem;
   text-transform: uppercase;
+  font-size: 2.0rem;
 }
 
 .project-item-info {
   padding: 1.5rem 0.8rem;
 }
 
+.project-item-info p {
+  font-size: 1.4rem;
+}
 .project-item-content table {
-  border-collapse: collapse; /* Gộp viền */
+  border-collapse: collapse;
   border: none;
 }
+
 .project-item-content th,
 td {
   border: 1px solid #adb8bd;
   padding: 0.8rem;
   text-align: left;
-  border-left: none; /* Bỏ viền trái */
-  border-right: none; /* Bỏ viền phải */
+  border-left: none;
+    border-right: none;
+    font-size: 1.5rem;
 }
 
 .project-item-content td:first-child {
@@ -438,10 +420,11 @@ footer {
   width: 100%;
   margin-bottom: 1rem;
   break-inside: avoid;
+  min-width: 30rem;
 }
+
 .item-footer p {
-  font-size: 1.2rem;
-  padding-left: 0.5rem;
+  font-size: 1.4rem;
 }
 
 .work-info-item {
@@ -451,6 +434,7 @@ footer {
   position: relative;
   transition: transform 0.3s ease;
 }
+
 .work-info-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -463,7 +447,9 @@ footer {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  font-size: 1.4rem;
 }
+
 .work-info-item:hover .view-more-btn {
   opacity: 1;
   transform: translateY(0);
