@@ -28,25 +28,22 @@ form.addEventListener("submit", function (event) {
   form.reset();
 });
 
-const viewMoreButtons = document.querySelectorAll(".view-more-btn");
-viewMoreButtons.forEach((button) => {
-  button.addEventListener("click", function () {
-    // Tìm work-info-item cha của nút
-    const workInfoItem = button.parentElement;
-    // Tìm tất cả các work-info-item-content trong work-info-item
-    const contents = workInfoItem.querySelectorAll(".work-info-item-content");
-
-    // Kiểm tra trạng thái hiện tại (ẩn hay hiển thị)
-    const isHidden = contents[0].classList.contains("d-none");
-
-    if (isHidden) {
-      // Hiển thị nội dung
-      contents.forEach((content) => content.classList.remove("d-none"));
-      button.textContent = "View Less";
-    } else {
-      // Ẩn nội dung
-      contents.forEach((content) => content.classList.add("d-none"));
-      button.textContent = "View More";
-    }
+document.querySelectorAll(".view-more-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    // Toggle content visibility
+    const contents = button.parentElement.querySelectorAll(
+      ".work-info-item-content"
+    );
+    contents.forEach((content) => content.classList.toggle("d-none"));
+    // Re-layout the grid
+    setTimeout(() => masonry.layout(), 0);
   });
+});
+
+const masonryContainer = document.querySelector(".masonry-container");
+const masonry = new Masonry(masonryContainer, {
+  itemSelector: ".masonry-item",
+  columnWidth: ".masonry-item",
+  percentPosition: true,
+  gutter: 10, // 1rem = 10px
 });

@@ -410,17 +410,25 @@ footer {
   border-radius: 50%;
 }
 
-.masonry-container {
-  column-count: 3;
-  column-gap: 1rem;
-}
 
-.masonry-item {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 1rem;
-  break-inside: avoid;
-  min-width: 30rem;
+  
+  .masonry-item {
+    width: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+    @media (max-width: 991px) {
+    .masonry-item {
+      width: calc(50% - 1rem);
+        /* Two columns on tablet */
+      }
+      }
+      
+      @media (max-width: 576px) {
+        .masonry-item {
+          width: 100%;
+      /* One column on mobile */
+      }
 }
 
 .item-footer p {
