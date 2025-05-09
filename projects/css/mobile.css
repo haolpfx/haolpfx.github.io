@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+    .grid-container {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .content {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+}

@@ -1,0 +1,66 @@
+@media (max-width: 576px) {
+
+  .topnav a {
+    display: block;
+    text-align: start;
+    border: none;
+    padding: 1rem 2em;
+    height: auto;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .content {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .personal-info .content p {
+    margin-bottom: 0.3rem;
+  }
+
+  .objective .content p {
+    margin-bottom: 2rem;
+  }
+
+  .masonry-container {
+    column-count: 1;
+  }
+
+  .certificate-content {
+    grid-template-columns: 1fr;
+    /* gap: 2.0rem; */
+  }
+
+  .certificate-item:nth-child(even) {
+    border-left: none;
+    /* padding-left: 0; */
+  }
+
+  .certificate-item {
+    display: block;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #8a3535;
+  }
+
+  .cert-item-img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    margin-bottom: 1rem;
+  }
+
+  .item-footer p {
+    display: none;
+  }
+
+}
