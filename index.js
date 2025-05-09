@@ -34,6 +34,11 @@ document.querySelectorAll(".view-more-btn").forEach((button) => {
     const contents = button.parentElement.querySelectorAll(
       ".work-info-item-content"
     );
+    if (contents[0].classList.contains("d-none")) {
+      button.textContent = "View less";
+    } else {
+      button.textContent = "View more";
+    } 
     contents.forEach((content) => content.classList.toggle("d-none"));
     // Re-layout the grid
     setTimeout(() => masonry.layout(), 0);
